@@ -90,6 +90,9 @@ declare module waterline {
         drop(cb: cb): void;
     }
 
+    interface AsyncResultCallback<T> { (err: Error, result: T): void; }
+    interface AsyncResultIterator<T, R> { (item: T, callback: AsyncResultCallback<R>): void; }
+
     export interface dql {
         create(values: any | any[], cb?: cb|AsyncResultIterator<any, any>): any;
         update(criteria: {}, values: {}, cb?: cb): any;
@@ -165,12 +168,12 @@ declare module waterline {
         url?: string;
         postgres?: any; // TODO: Fix this line
         /*
-        connections: Connection[],
-        query: any,
-        collection: string,
-        identity: string,
-        dictionary: adapterDictionary
-        */
+         connections: Connection[],
+         query: any,
+         collection: string,
+         identity: string,
+         dictionary: adapterDictionary
+         */
     }
 
     export interface adapterDictionary {
@@ -203,4 +206,3 @@ declare module waterline {
 declare module "waterline" {
     export = waterline;
 }
-
