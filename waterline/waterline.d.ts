@@ -1,4 +1,4 @@
-declare module "waterline" {
+declare namespace waterline {
     export interface waterline {
         new (): waterline;
         _collections: Collection[];
@@ -200,3 +200,5 @@ declare module "waterline" {
         detail?: string;
     }
 }
+
+export = waterline;

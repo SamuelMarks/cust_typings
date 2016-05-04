@@ -1,4 +1,6 @@
-declare module "sails-redis" {
+declare var sailsRedis: sailsRedis.sailsRedis;
+
+declare namespace sailsRedis {
     export interface sailsRedis {
         new (): sailsRedis;
         registerConnection: (connection: any, collections: any, cb: any) => any;
@@ -11,4 +13,8 @@ declare module "sails-redis" {
         removeAttribute: (connectionName: any, table: any, attrName: any, cb: any) => any;
         /* etc. */
     }
+}
+
+declare module "sails-redis" {
+    export = sailsRedis;
 }
