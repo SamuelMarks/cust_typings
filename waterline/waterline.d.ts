@@ -1,6 +1,4 @@
-declare var waterline: waterline.waterline;
-
-declare module waterline {
+declare module "waterline" {
     export interface waterline {
         new (): waterline;
         _collections: Collection[];
@@ -161,7 +159,7 @@ declare module waterline {
     }
 
     export interface cb {
-        (error: waterline.WLError, result?: any): any;
+        (error: WLError, result?: any): any;
     }
 
     export interface Adapter {
@@ -201,8 +199,4 @@ declare module waterline {
         details: string;
         detail?: string;
     }
-}
-
-declare module "waterline" {
-    export = waterline;
 }

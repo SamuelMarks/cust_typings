@@ -1,6 +1,4 @@
-declare var sailsPostgres: sailsPostgres.sailsPostgres;
-
-declare module sailsPostgres {
+declare module "sails-postgresql" {
     export interface sailsPostgres {
         new (): sailsPostgres;
         registerConnection: (connection: any, collections: any, cb: any) => any;
@@ -13,8 +11,4 @@ declare module sailsPostgres {
         removeAttribute: (connectionName: any, table: any, attrName: any, cb: any) => any;
         /* etc. */
     }
-}
-
-declare module "sails-postgresql" {
-    export = sailsPostgres;
 }
