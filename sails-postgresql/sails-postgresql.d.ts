@@ -1,6 +1,6 @@
 declare var sailsPostgres: sailsPostgres.sailsPostgres;
 
-declare namespace sailsPostgres {
+declare module sailsPostgres {
     export interface sailsPostgres {
         new (): sailsPostgres;
         registerConnection: (connection: any, collections: any, cb: any) => any;

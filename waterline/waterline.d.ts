@@ -1,4 +1,6 @@
-declare namespace waterline {
+declare var waterline: waterline.waterline;
+
+declare module waterline {
     export interface waterline {
         new (): waterline;
         _collections: Collection[];
@@ -201,4 +203,6 @@ declare namespace waterline {
     }
 }
 
-export = waterline;
+declare module "waterline" {
+    export = waterline;
+}
