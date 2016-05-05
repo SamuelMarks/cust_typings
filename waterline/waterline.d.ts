@@ -1,6 +1,6 @@
 declare var waterline: waterline.waterline;
 
-declare module waterline {
+declare namespace waterline {
     export interface waterline {
         new (): waterline;
         _collections: Collection[];

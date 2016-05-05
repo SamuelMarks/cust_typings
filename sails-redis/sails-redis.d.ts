@@ -1,6 +1,6 @@
 declare var sailsRedis: sailsRedis.sailsRedis;
 
-declare module sailsRedis {
+declare namespace sailsRedis {
     export interface sailsRedis {
         new (): sailsRedis;
         registerConnection: (connection: any, collections: any, cb: any) => any;
