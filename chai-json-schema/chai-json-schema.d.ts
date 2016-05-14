@@ -6,6 +6,11 @@ declare namespace chaiJsonSchema {
     export function extractSchemaLabel(schema: string, max: number): string;
 
     export function valueStrim(value: string, cutoff?: number): string;
+
+    export interface Assertion {
+        jsonSchema(j: JSON): Assertion;
+        jsonSchema(o: {}): Assertion;
+    }
 }
 
 export = chaiJsonSchema;
