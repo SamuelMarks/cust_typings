@@ -1,6 +1,6 @@
-declare module chaiJsonSchema {
-    function chaiJsonSchema(chai: any, utils: any): void;
+declare function chaiJsonSchema(chai: any, utils: any): void;
 
+declare module chaiJsonSchema {
     export function formatResult(error: string, data: string, schema: string, indent: string): string;
 
     export function extractSchemaLabel(schema: string, max: number): string;
