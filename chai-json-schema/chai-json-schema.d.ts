@@ -1,5 +1,6 @@
 declare function chaiJsonSchema(chai: any, utils: any): void;
 
+/*
 declare module chaiJsonSchema {
     export function formatResult(error: string, data: string, schema: string, indent: string): string;
 
@@ -7,6 +8,7 @@ declare module chaiJsonSchema {
 
     export function valueStrim(value: string, cutoff?: number): string;
 }
+*/
 
 declare namespace Chai {
     // For BDD API
