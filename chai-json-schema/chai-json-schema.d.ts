@@ -10,8 +10,6 @@ declare module chaiJsonSchema {
     }
 }
 
-export = chaiJsonSchema;
-
 declare namespace Chai {
     // For BDD API
     interface Assertion {
@@ -23,3 +21,5 @@ declare namespace Chai {
         jsonSchema(j: JSON|{}): Assert;
     }
 }
+
+export = chaiJsonSchema;
