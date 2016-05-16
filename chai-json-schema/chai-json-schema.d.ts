@@ -1,8 +1,3 @@
-declare function chaiJsonSchema(chai: any, utils: any): void;
-
-declare module chaiJsonSchema {
-}
-
 declare namespace Chai {
     // For BDD API
     interface Assertion {
@@ -15,4 +10,15 @@ declare namespace Chai {
     }
 }
 
-export = chaiJsonSchema;
+declare function chaiJsonSchema(chai: any, utils: any): void;
+declare var chaiJsonSchema: chaiJsonSchema.chaiJsonSchema;
+
+declare module chaiJsonSchema {
+    export interface chaiJsonSchema {
+        new (): chaiJsonSchema;
+    }
+}
+
+declare module "chai-json-schema" {
+    export = chaiJsonSchema;
+}
