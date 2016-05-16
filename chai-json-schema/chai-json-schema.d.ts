@@ -7,7 +7,7 @@ declare module chaiJsonSchema {
     }
 }
 
-namespace Chai {
+declare namespace Chai {
     // For BDD API
     interface Assertion {
         jsonSchema(j: JSON|{}): Assertion;
