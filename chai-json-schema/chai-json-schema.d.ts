@@ -10,12 +10,13 @@ declare namespace Chai {
     }
 }
 
-declare function chaiJsonSchema(chai: any, utils: any): void;
+//declare function chaiJsonSchema(chai: any, utils: any): void;
 declare var chaiJsonSchema: chaiJsonSchema.chaiJsonSchema;
 
 declare module chaiJsonSchema {
     export interface chaiJsonSchema {
         new (): chaiJsonSchema;
+        (chai: any, utils: any): void
     }
 }
 
