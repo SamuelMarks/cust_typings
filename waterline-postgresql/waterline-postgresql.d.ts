@@ -1,5 +1,5 @@
-export interface sailsPostgres {
-    new (): sailsPostgres;
+export interface waterlinePostgres {
+    new (): waterlinePostgres;
     registerConnection: (connection: any, collections: any, cb: any) => any;
     teardown: (conn: any, cb: any) => any;
     query: (connectionName: any, table: any, query: any, data: any, cb: any) => any;
