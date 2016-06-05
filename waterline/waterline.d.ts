@@ -148,10 +148,11 @@ declare module waterline {
         toObject(): Object;
         save(options: {}, cb: cb): any;
         destory(cb: any): any;
+        find(query: Object): any;
         _defineAssociations(): void;
         _normalizeAssociations(): void;
         _cast(values: any[]): void;
-        query(query: string, cb: cb): void; 
+        query(query: string, cb: cb): void;
         validate(cb: cb): void | any;
         toJSON(): JSON;
     }
