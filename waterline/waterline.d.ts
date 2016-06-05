@@ -151,6 +151,7 @@ declare module waterline {
         _defineAssociations(): void;
         _normalizeAssociations(): void;
         _cast(values: any[]): void;
+        query(query: string, cb: cb): void; 
         validate(cb: cb): void | any;
         toJSON(): JSON;
     }
