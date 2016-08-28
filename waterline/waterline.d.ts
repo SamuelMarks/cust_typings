@@ -198,8 +198,9 @@ declare module waterline {
         reason: string;
         code: string;
         status: number;
-        details: string;
         detail?: string;
+        details: string;
+        message?: string;
     }
 }
 
