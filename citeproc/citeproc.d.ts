@@ -452,3 +452,23 @@ export interface citeproc {
         locale_dates: {};
     }
 }
+
+export interface IItem {
+    chapter?: string;
+    publisher?: string;
+    issn?: string;
+    isbn?: string;
+    author?: string;
+    series?: string;
+    booktitle?: string;
+    title?: string;
+    number?: string;
+    pages?: string;
+    note?: string;
+    edition?: string;
+    editor?: string;
+    address?: string;
+    annote?: string;
+    journal?: string;
+    volume?: string;
+}
