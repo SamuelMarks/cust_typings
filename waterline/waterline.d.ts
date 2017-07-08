@@ -98,7 +98,7 @@ declare module waterline {
         update(criteria: {}, values: {}, cb?: cb): any;
         destroy(criteria: {}, cb?: cb): any;
         count(criteria: {}, options: {}, cb?: cb): any;
-        join(collection, fk, pk, cb): void;
+        join(collection: Collection, fk: string, pk: string, cb?: cb): void;
     }
 
     export interface aggregate {
@@ -147,7 +147,7 @@ declare module waterline {
         (context: {}, mixins: {}): Model;
         toObject(): Object;
         save(options: {}, cb: cb): any;
-        destory(cb): any;
+        destory(cb: cb): any;
         _defineAssociations(): void;
         _normalizeAssociations(): void;
         _cast(values: any[]): void;
