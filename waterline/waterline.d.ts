@@ -78,7 +78,7 @@ declare module waterline {
         buildDynamicFinders(): void;
         sync(cb: cb): void;
         extend(protoProps: {}, staticProps: {}): {};
-        query(sql: string, valuesToEscape: string[], done: (err: Error, rawResult: any) => void);
+        query(sql: string, valuesToEscape: string[], done: (err: Error, rawResult: any) => void): any;
     }
 
     export interface validate {
