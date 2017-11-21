@@ -7,7 +7,7 @@ declare module waterline {
         _connections: Connection[];
         Collection: Collection;
         Model: Model;
-        // loadCollection(collection: Collection): Collection[]; /* deprecated */
+        loadCollection(collection: Collection): Collection[]; /* deprecated */
         registerModel(model: Collection): Collection[];
         initialize(options: ConfigOptions, cb: cb): void;
         schema: Schema;
